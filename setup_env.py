@@ -3,7 +3,7 @@ import secrets
 from cryptography.fernet import Fernet
 
 
-def update_env(env_file='.env'):
+def setup_env(env_file='.env'):
     if not os.path.exists(env_file):
         print(f"File {env_file} not found!")
         return
@@ -37,4 +37,4 @@ def update_env(env_file='.env'):
     print(f"🔑 Fernet Key: {fernet_key}")
 
 if __name__ == "__main__":
-    update_env()
+    setup_env()
