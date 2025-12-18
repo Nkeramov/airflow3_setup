@@ -1,9 +1,14 @@
 # Airflow 3 Setup Example
 
-This repository contains a basic setup for running Apache Airflow 3 using Docker. It includes:
+<div align="center">
+    <img src="apache-airflow-logo.png" height="200">
+</div>
 
+This repository contains a basic setup for running Apache Airflow 3 using Docker.
+
+It includes:
 - Dockerfile – Custom Airflow image with additional dependencies.
-- docker-compose.yaml – Preconfigured services (scheduler, webserver, postgres, redis).
+- docker-compose.yaml – Preconfigured services (scheduler, webserver, postgres).
 - .env – Environment variables (credentials, configurations).
 - requirements.txt – Python dependencies for Airflow.
 
@@ -26,7 +31,10 @@ The configuration file is located in the `.env` file. You can copy the `env.exam
 cp env.example .env
 ```
 
-Generate JWT secret and Fernet key by running the `update_env.py` script or add existing ones manually.
+Generate JWT secret and Fernet key by running the `setup_env.py` script or add existing ones manually.
+```
+python3 setup_env.py
+```
 
 ### Running
 
