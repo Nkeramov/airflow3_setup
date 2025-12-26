@@ -1,6 +1,6 @@
 # Image: Apache Airflow with Python dependencies
 # This Dockerfile builds an Apache Airflow image with additional Python dependencies.
-FROM apache/airflow:3.1.4
+FROM apache/airflow:3.1.5
 
 # Install dependencies for building Python packages
 # Use the root user to install system dependencies

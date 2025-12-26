@@ -1,6 +1,6 @@
-apache-airflow==3.1.4
+apache-airflow == 3.1.5
 airflow-provider-duckdb == 0.2.0
-apache-airflow-providers-fab == 3.0.2
+apache-airflow-providers-fab == 3.1.0
 apache-airflow-providers-trino == 6.4.1
 apache-airflow-providers-postgres == 6.5.1
 apache-airflow-providers-common-sql == 1.30.1
