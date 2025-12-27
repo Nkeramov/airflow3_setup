@@ -12,6 +12,8 @@ It includes:
 - .env – Environment variables (credentials, configurations).
 - requirements.txt – Python dependencies for Airflow.
 
+PostgreSQL is used as the metadata database.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -44,6 +46,14 @@ Run the following command to build and start Airflow: `docker compose up --build
 
 Access the Airflow UI at: 🔗 http://localhost:8080
 
+### Management Commands
+
+| Command                         | Description                     |
+|---------------------------------|---------------------------------|
+| `docker compose up -d --build`  | Start all services              |
+| `docker compose down`           | Stop all services               |
+| `docker compose logs -f`        | View real-time logs             |
+
 ## 🤝 Contributing
 
 If you want to contribute, please follow these steps:
@@ -60,4 +70,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 📚 References 
 
 - [Airflow Documentation](https://airflow.apache.org/docs/)
+- [Airflow Docker Compose Setup](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
 - [Apache Airflow® 3 is Generally Available!](https://airflow.apache.org/blog/airflow-three-point-oh-is-here/)
+- [Reference for package extras](https://airflow.apache.org/docs/apache-airflow/stable/extra-packages-ref.html)
